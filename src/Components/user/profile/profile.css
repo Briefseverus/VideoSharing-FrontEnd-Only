@@ -1,0 +1,210 @@
+/* profile.css */
+
+.container-profile {
+  display: flex;
+  height: 100vh;
+  color: black;
+}
+
+.sidebar {
+  flex: 0 0 240px;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+}
+
+/* Sidebar */
+
+.logo-profile {
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  padding: 10px 0;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-item.active {
+  color: #007bff;
+}
+
+/* Main Content */
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+}
+
+/* Tab bar */
+
+.tab-bar {
+  display: flex;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab.active {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+/* Content Navigation */
+
+.content-navigation {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.content-navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.content-navigation li {
+  margin: 0 15px;
+  padding: 10px;
+}
+
+.content-navigation li.active {
+  border-bottom: 2px solid #007bff;
+}
+
+/* No Content */
+
+.no-content {
+  display: flex;
+  padding: 50px;
+}
+
+.vip-icon {
+  padding: 5px 10px;
+  background-color: gold;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.8em;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.no-content-icon {
+  color: #ccc;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.upload-btn {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #0062cc;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .sidebar {
+    flex: 1;
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  .tab-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .content-navigation li {
+    flex: 0 0 auto;
+    margin: 0 10px;
+  }
+
+  .content-navigation ul {
+    overflow-x: auto;
+  }
+}
+.channel-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e1e1e1;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.channel-list-item:hover {
+  background-color: #f9f9f9;
+}
+
+.profile-channel-image{
+  width: 80px; /* or any size you prefer */
+  height: 80px; /* maintain aspect ratio */
+  border-radius: 40px; /* make it round */
+  margin-right: 15px; /* space between image and content */
+  object-fit: cover; /* ensure the image covers the area */
+}
+
+.channel-content {
+  flex-grow: 1;
+}
+
+.channel-link {
+  display: block;
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.channel-link:hover,
+.channel-link:focus {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.channel-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .channel-image {
+    width: 60px; /* smaller size on mobile */
+    height: 60px;
+  }
+}

@@ -1,0 +1,17 @@
+.action {
+    background-color: #007bff; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: 2px solid #007bff; /* Khung viền màu xanh */
+    border-radius: 5px; /* Độ cong của góc khung */
+    padding: 5px 10px; /* Khoảng cách bên trong khung */
+    display: inline-block; /* Để khung chỉ chiếm đúng khoảng cần thiết */
+    text-transform: uppercase; /* Viết hoa chữ */
+    font-weight: bold; /* Đậm */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng hover */
+    cursor: pointer; /* Thay đổi con trỏ khi di chuột qua */
+}
+
+.action:hover {
+    background-color: #fff; /* Màu nền khi hover */
+    color: #007bff; /* Màu chữ khi hover */
+}

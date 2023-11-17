@@ -1,0 +1,31 @@
+.video {
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    width: 23%;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: black;
+  }
+  
+  .video img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease; 
+  }
+  .video:hover {
+    transform: scale(1.05);
+  }
+  
+  .video:hover img {
+    transform: scale(1.2);
+  }
+  
+  .video:hover .play-icon {
+    opacity: 1;
+  }
+  .video-list-title {
+    color: white;
+  }

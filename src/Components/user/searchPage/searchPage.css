@@ -1,0 +1,73 @@
+.search-page {
+    padding: 20px;
+  }
+  
+  .search-results {
+    margin-top: 20px;
+  }
+  
+  .search-result-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-result-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-result-image {
+    max-width: 120px;
+    margin-right: 20px;
+  }
+  
+  .play-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .search-result-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .search-result-title {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .search-result-description,
+  .search-result-channel {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* CSSTransition classes */
+  .result-fade-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .result-fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .result-fade-exit {
+    opacity: 1;
+  }
+  
+  .result-fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  

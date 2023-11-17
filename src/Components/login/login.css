@@ -1,0 +1,72 @@
+/* Login Styles */
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://preview.gentechtreedesign.com/streamlab/wp-content/uploads/2021/01/1-1.jpg') center/cover no-repeat; 
+}
+
+.login-box {
+  width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  color: #070919;
+}
+
+.login-box h2 {
+  font-size: 32px; 
+  margin-bottom: 30px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #00b3ff;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px; 
+  color: #00b3ff;
+  transition: .5s;
+  pointer-events: none;
+}
+
+.user-box input:focus ~ label, 
+.user-box input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #00b3ff;
+  font-size: 12px;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #00b3ff;
+  text-decoration: none;
+  transition: .3s ease;
+  margin-top: 30px;
+}
+
+.submit-btn:hover {
+  background: #00b3ff;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,179,255, 0.5);
+}

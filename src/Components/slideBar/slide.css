@@ -1,0 +1,48 @@
+/* Updated sidebar styles */
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2c3e50; /* A darker shade for better contrast */
+  padding: 20px;
+  box-sizing: border-box; /* This ensures padding doesn't affect the width */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 10px 15px;
+  margin: 5px 0;
+  color: #000000; /* Lighter text for better legibility on dark bg */
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease;
+  border-radius: 4px; /* Rounded corners for all items */
+  cursor: pointer; /* Indicates the item is clickable */
+}
+
+.sidebar-item:hover, .sidebar-item:active, .sidebar-item:focus {
+  background-color: #34495e;
+  color: #ff0000; /* White text for contrast */
+}
+
+.sidebar-section {
+  margin-top: 20px;
+  border-top: 1px solid #4b6584; /* Add separation to sections */
+  padding-top: 20px;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  color: #ecf0f1; /* Use the same text color for consistency */
+  margin-bottom: 10px; /* Spacing before section items */
+}
+
+.sidebar-icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 18px; /* Slightly larger icons for visibility */
+}
+.icon {
+  margin-right: 10px;
+  color: #3d3636;
+}
+

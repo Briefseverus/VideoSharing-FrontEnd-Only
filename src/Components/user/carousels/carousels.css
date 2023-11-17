@@ -1,0 +1,80 @@
+/* carousels.css */
+
+.carousels {
+    position: relative;
+  }
+  
+  .slide {
+    height: 730px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    background: linear-gradient(to right, #0B1017, rgba(11,16,23,0)); 
+    transition: opacity 0.5s ease;
+}
+  .slide1 {
+    background-image: url('https://preview.gentechtreedesign.com/streamlab/wp-content/uploads/2019/03/5.jpg'); 
+    
+}
+  .slide2 {
+    background-image: url('https://preview.gentechtreedesign.com/streamlab/wp-content/uploads/2021/01/1-1.jpg');
+  } 
+  
+  .slide3 {
+    background-image: url('https://preview.gentechtreedesign.com/streamlab/wp-content/uploads/2019/02/3-4.jpg');  
+  }
+  
+  .slide-content {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;  
+  }
+
+  .slide-info {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .slide-info,
+  .slide-text {
+  text-align: left; 
+  }
+  .slide-title {
+    display: flex;
+    padding: 0;
+}
+
+.slide-title li {
+    margin-right: 20px; /* Điều này tạo ra khoảng cách giữa các mục */
+}
+.slide-title-rating {
+    border: 1px solid #fff; /* Đặt độ rộng và màu của khung */
+}
+  .video-container {
+    position: absolute;
+    top: 15rem;
+    right: 230px;
+    background-color: transparent; /* Add this line to make the background transparent */
+}
+.video-container iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: transparent; /* Add this line to make the background of the iframe transparent */
+}
+  /* responsive */
+  
+  @media (max-width: 768px) {
+    .slide {
+      height: 300px;
+    }
+    
+    .slide-info {
+      font-size: 2rem;
+    }
+  }
+  

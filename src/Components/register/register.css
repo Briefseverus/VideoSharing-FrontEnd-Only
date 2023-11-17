@@ -1,0 +1,76 @@
+/* Register Styles */
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://preview.gentechtreedesign.com/streamlab/wp-content/uploads/2021/01/1-1.jpg') center/cover no-repeat; 
+}
+.register-box {
+  width: 350px;
+  background: #f4f4f4; /* Changed the background color to a lighter gray */
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #333; /* Changed text color to a darker gray */
+}
+
+.register-box h2 {
+  font-size: 28px; /* Slightly reduced the font size for the heading */
+  margin-bottom: 20px; /* Reduced the margin */
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #00b3ff;
+  background: transparent;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Added transitions for a smoother effect */
+}
+
+.user-box label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #777; /* Changed label color to a lighter gray */
+  transition: .3s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -18px;
+  font-size: 12px;
+  color: #00b3ff;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* Changed text color to white */
+  background: #00b3ff;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.1s; /* Added transitions for button interaction */
+  cursor: pointer;
+  outline: none;
+}
+
+.submit-btn:hover {
+  background: #007acc; /* Darker shade of blue on hover */
+  box-shadow: 0 0 10px rgba(0, 179, 255, 0.5);
+  transform: scale(1.05); /* Slight scale effect on hover */
+}

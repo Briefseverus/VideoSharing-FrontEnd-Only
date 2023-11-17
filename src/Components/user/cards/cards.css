@@ -1,0 +1,87 @@
+/* cards.css */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 5 equal columns */
+  grid-gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff; /* Light background for the card */
+  position: relative;
+  border-radius: 15px; /* Rounded corners for the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 350px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Organize space between card content */
+}
+
+.card img {
+  width: 100%;
+  height: 150px; /* Fixed height for image */
+  object-fit: cover; /* Ensure the image covers the area */
+  display: block;
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight move up */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Zoom in on the image */
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .play-icon {
+  opacity: 0.7;
+  transform: translate(-50%, -50%) scale(1.2); /* Slightly larger and visible */
+}
+
+.card-content {
+  padding: 20px;
+  background-color: #f8f8f8; /* Slightly off-white for the content background */
+  border-top: 1px solid #eaeaea; /* subtle top border */
+}
+
+.video-title {
+  color: #333; /* Darker text for better readability */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #666; /* Lighter color for the description */
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Additional media query for very small screens to ensure usability */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

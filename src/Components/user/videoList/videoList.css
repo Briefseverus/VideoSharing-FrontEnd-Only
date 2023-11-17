@@ -1,0 +1,49 @@
+/* VideoList.css */
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+/* Tab.css */
+
+.tab-list {
+  display: flex;  
+  border-bottom: 1px solid #000000;
+  text-transform: uppercase;
+}
+
+.tab-list li {
+  margin-right: 25px;
+  padding: 12px 0;  
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  filter: opacity(0.7);
+  transition: all 0.2s;
+}
+
+.tab-list li i {
+  margin-right: 10px;
+}
+
+.tab-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tab-list li.active {
+  filter: opacity(1);
+
+  animation: tabSelect 0.2s ease-in-out; 
+}
+
+@keyframes tabSelect {
+  from {transform: scale(0.9)}
+  to {transform: scale(1)} 
+}

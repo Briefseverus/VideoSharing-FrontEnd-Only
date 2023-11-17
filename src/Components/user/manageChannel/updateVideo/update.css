@@ -1,0 +1,47 @@
+.update-video-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-video-input {
+    width: calc(100% - 20px);
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .update-video-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .update-video-button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Handling focus state for accessibility */
+  .update-video-input:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.25);
+  }
+  
+  /* Handling disabled button state */
+  .update-video-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

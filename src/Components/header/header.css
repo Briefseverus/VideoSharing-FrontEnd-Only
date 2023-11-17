@@ -1,0 +1,72 @@
+/* header.css */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-nav .search-form {
+  position: relative;
+}
+
+.header-nav .search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auth-logged-in {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.auth-username {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-logout,
+.auth-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.auth-logout:hover,
+.auth-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .auth,
+  .auth-logged-in {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

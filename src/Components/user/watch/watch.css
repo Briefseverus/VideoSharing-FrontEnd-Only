@@ -1,0 +1,296 @@
+/* watch.css */
+.video-metadata .video-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.channelUser {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  padding: 0px 5px;
+  width: 50px; /* Adjust width as needed */
+  height: 50px;
+  border-radius: 50%; /* This creates the round shape */
+  object-fit: cover;
+}
+
+.video-stats {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.video-description {
+  font-size: 14px;
+  color: #333;
+}
+.channel-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.channel-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.watch-video-container {
+  margin-top: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.watch-video {
+  width: 100%;
+  max-width: 800px;
+}
+
+.watch-video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 19/9;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.watch-video-list {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.watch-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.watch-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.watch-card:hover {
+  transform: scale(1.05);
+}
+
+.watch-card:hover img {
+  transform: scale(1.2);
+}
+
+.watch-card:hover .play-icon {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .watch-video {
+    max-width: 100%;
+  }
+
+  .channel-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subscribe-button {
+    margin-top: 10px;
+  }
+
+  /* Adjust font sizes and paddings as necessary */
+}
+
+/* comments.css */
+/* new-comment.css */
+
+.new-comment-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.new-comment-area input[type="text"] {
+  flex-grow: 1; /* Input will take up the available space */
+  padding: 10px 15px;
+  margin-right: 10px; /* Space between input and button */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.new-comment-area input[type="text"]::placeholder {
+  color: #888;
+}
+
+.new-comment-area button {
+  padding: 10px 20px;
+  background-color: #5cb85c; /* Bootstrap's btn-success color */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.new-comment-area button:hover {
+  background-color: #4cae4c; /* Slightly darker on hover */
+}
+
+/* Add responsiveness to the input area */
+@media (max-width: 768px) {
+  .new-comment-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .new-comment-area input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 10px; /* Space between input and button on small screens */
+  }
+}
+.comment-container {
+  background-color: #ffffff; /* Crisp white background */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px; /* Spacing between comments */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05); /* Soft shadow for a floating effect */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.comment-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); /* Deeper shadow on hover */
+}
+
+.comment-content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5; /* Improved line spacing for readability */
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.comment-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 10px;
+  text-align: right; /* Align date to the right */
+}
+
+.edit-comment-input {
+  width: calc(100% - 40px); /* Full width minus padding */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 2px solid #ddd; /* Solid border for focus */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.edit-comment-input:focus {
+  border-color: #bbb; /* Darker border on focus */
+}
+
+.comment-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px; /* Pill-shaped buttons */
+  cursor: pointer;
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* UPPERCASE text for buttons */
+  letter-spacing: 1px; /* Spacing between letters */
+  transition: all 0.3s ease; /* Transition for background and transform */
+  display: inline-flex; /* Flexbox for centering icon and text */
+  align-items: center; /* Vertical center */
+  justify-content: center; /* Horizontal center */
+}
+
+.comment-button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for lifting effect */
+}
+
+/* Color coding for actions with gradients for a modern look */
+.comment-button.update {
+  background-color: #28a745; /* Bootstrap green */
+  color: white;
+}
+
+.comment-button.cancel {
+  background-color: #dc3545; /* Bootstrap red */
+  color: white;
+}
+
+.comment-button.edit {
+  background-color: #ffc107; /* Bootstrap yellow */
+  color: white;
+}
+
+.comment-button.delete {
+  background-color: #17a2b8; /* Bootstrap blue */
+  color: white;
+}
+
+/* Adding icons using pseudo-elements for a richer interface */
+.comment-button.edit::before,
+.comment-button.delete::before,
+.comment-button.update::before,
+.comment-button.cancel::before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.comment-button.edit::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3597/3597075.png"); /* Replace with your edit icon */
+}
+
+.comment-button.delete::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3687/3687412.png"); /* Replace with your delete icon */
+}
+
+.comment-button.update::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/5278/5278658.png"); /* Replace with your update icon */
+}
+
+.comment-button.cancel::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/594/594864.png"); /* Replace with your cancel icon */
+}
